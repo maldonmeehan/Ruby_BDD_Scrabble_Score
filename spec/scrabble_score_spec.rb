@@ -22,18 +22,13 @@ describe('Sting#scrabble_score') do
     expect("k".scrabble_score()).to(eq(5))
   end
 
+  it("returns a scrabble score for a letter") do
+    expect("j".scrabble_score()).to(eq(8))
+  end
 end
 
 
 
-# it("it evaluates a word to see if includes one of the following letters: A, E, I, O, U, L, N, R, S, T")do
-#   expect(("cake").scrabble_score()).to(eq("C1K1"))
-# end
-
-# | Word includes one of the following letters: A, E, I, O, U, L, N, R, S, T, the program returns the appropriate score| "A" | 1 |
-# | If word has letters: "D, G"     | "D"      |   2 |
-# | If word has letters: "B, C, M, P" | "M" | 3 |
-# | If word has letters: "F, H, V, W, Y" |"F"| 4 |
 # | If word has letters: "K"  |"K"| 5 |
 # | If word has letters: "J, X"  |"X"| 8 |
 # | If word has letters: "Q, Z"  |"Z"| 10 |
