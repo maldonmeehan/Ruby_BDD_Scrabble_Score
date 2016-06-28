@@ -2,14 +2,27 @@ require('rspec')
 require('scrabble_score.rb')
 
 describe('Sting#scrabble_score') do
-  it("takes a word and converts it to upper case") do
-    expect(("cake").scrabble_score()).to(eq("CAKE"))
+  it("takes a lower sting and converts it to upper case") do
+    expect(("a").scrabble_score()).to(eq(1))
   end
 
+  it("returns a scrabble score for a letter") do
+    expect("a".scrabble_score()).to(eq(1))
+  end
+
+  it("returns a scrabble score for a letter") do
+    expect("d".scrabble_score()).to(eq(2))
+  end
+
+  it("returns a scrabble score for a letter") do
+    expect("b".scrabble_score()).to(eq(3))
 end
 
 
 
+# it("it evaluates a word to see if includes one of the following letters: A, E, I, O, U, L, N, R, S, T")do
+#   expect(("cake").scrabble_score()).to(eq("C1K1"))
+# end
 
 # | Word includes one of the following letters: A, E, I, O, U, L, N, R, S, T, the program returns the appropriate score| "A" | 1 |
 # | If word has letters: "D, G"     | "D"      |   2 |
