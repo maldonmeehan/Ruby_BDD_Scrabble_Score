@@ -16,6 +16,7 @@ describe('Sting#scrabble_score') do
 
   it("returns a scrabble score for a letter") do
     expect("b".scrabble_score()).to(eq(3))
+  end
 end
 
 
