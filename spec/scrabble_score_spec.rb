@@ -30,8 +30,3 @@ describe('Sting#scrabble_score') do
     expect("q".scrabble_score()).to(eq(10))
   end
 end
-
-
-
-# | If word has letters: "Q, Z"  |"Z"| 10 |
-# | Program add the letter values and returns a score to the user  |"CAT"| 3+1+1 = 5 |
